@@ -20,3 +20,18 @@
 
 
 # Write your code here:
+
+def pin_checker():
+    correct_pin = "4321"
+    attempts = 0
+    while True:
+        PIN = input("Enter your PIN:")
+        attempts += 1
+        if PIN == correct_pin:
+            if attempts == 1:
+                print ("Correct! It only took you one single attempt!")
+            else:
+                print(f"Correct! It took you {attempts} attempts")
+        else:
+            print("Wrong")
+pin_checker()
